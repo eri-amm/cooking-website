@@ -1,0 +1,167 @@
+/* search section styles */
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.title p {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-bar form {
+    margin: 0 20rem;
+    width: 40rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+.search-bar input {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.search-bar button {
+    width: 16rem;
+    font-size: 0.9rem;
+}
+
+
+/* content section styles*/
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.articles article {
+    display: flex;
+    gap: 2rem;
+    max-width: fit-content;
+    max-height: fit-content;
+    align-items: center;
+}
+
+.articles .details {
+    min-width: 20rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    max-height: fit-content;
+    padding-top: 0.5rem;
+}
+
+.articles .title {
+    max-height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.articles .details .name {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: start;
+}
+
+.name a, .suggestions a {
+    color: black;
+}
+
+.articles .details .caption {
+    width: 30rem;
+    text-align: start;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.articles .profile {
+    margin-bottom: 1rem;
+}
+
+.articles .avatar {
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.articles .publish {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.45rem;
+}
+
+.articles .publish .author {
+    padding: 0.3rem 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+.articles  article:nth-child(1) .avatar {
+    background-image: url(../images/la1.svg);
+}
+
+.articles  article:nth-child(2) .avatar {
+    background-image: url(../images/la2.svg);
+}
+
+.articles  article:nth-child(3) .avatar {
+    background-image: url(../images/la3.svg);
+}
+
+.articles  article:nth-child(4) .avatar {
+    background-image: url(../images/la4.svg);
+}
+
+.articles  article:nth-child(5) .avatar {
+    background-image: url(../images/la5.svg);
+}
+
+.articles  article:nth-child(6) .avatar {
+    background-image: url(../images/la6.svg);
+}
+
+/* pagination styles */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    gap: 0.9rem;
+}
+
+.pagination a {
+    color: black;
+    width: 4rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    text-align: center;
+    padding-top: 1.3rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pagination a:first-child {
+    color: white;
+    background-color: black;
+}

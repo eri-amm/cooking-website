@@ -1,0 +1,299 @@
+/* recipe section styles */
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.recipe h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid {
+    display: flex;
+    gap: 2.3rem;
+}
+
+.prep img, .cook img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.prep, .cook {
+    gap: 0.7rem;
+}
+
+.prep div, .cook div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.prep div p:first-child, .cook div p:first-child
+{
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.prep .duration, .cook .duration {
+    font-size: 0.9rem;
+}
+
+.credit .type {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1.3rem;
+    gap: 1rem;
+}
+
+.type p {
+    margin-top: 0.2rem;
+    font-weight: 600;
+}
+
+.profile, .prep, .cook {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 2rem;
+}
+
+.prep, .cook {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.duration {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.credit {
+    display: flex;
+    gap: 2rem;
+}
+
+.share {
+    margin-right: 2.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.share p {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.profile {
+    padding-right: 4rem;
+}
+
+.profile .avatar {
+  background-image: url(../images/avatar.svg);
+  width: 3rem;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/* recipe section mid part styles */
+
+.mid .nutrition {
+    background-image: url(../images/nuts.png);
+    padding-top: 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 30%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mid .nutrition div {
+    display: flex;
+    margin: 0 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    justify-content:space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.mid .nutrition div .field {
+    color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.mid .nutrition .disclaimer {
+    
+    margin: 0 2rem;
+    margin-top: 10rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.7rem;
+}
+
+.mid .nutrition h2 {
+    font-weight: 600;
+    margin: 0 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.foot {
+    font-size: 1.03rem;
+    margin-top: 2rem;
+    width: 81rem;
+    line-height: 1.7rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* tutorial section styles */
+.tutorial{
+    min-width: 53rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.content {
+    gap: 3rem;
+    width: fit-content;
+}
+
+.tutorial h4 {
+    font-size: 2.3rem;
+    
+}
+
+aside {
+    margin-left: -1rem;
+}
+
+.tutorial h5 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+.tutorial h4, .tutorial h5 {
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ingridients label {
+    font-size: 1.15rem;
+}
+
+.step {
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+label:has(input:checked) {
+  color: rgba(0, 0, 0, 0.3);           
+  text-decoration: line-through;
+}
+
+label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border: 3px solid #d5e0df;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+label input[type="checkbox"]:checked {
+  background: #000;
+  border-color: #000;
+}
+
+label input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 0.35rem;      
+  height: 0.75rem;     
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  left: 0.48rem;       
+  top: 0.17rem;        
+  transform: rotate(45deg);
+}
+
+li p {
+    margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+    width: 50rem;
+    line-height: 1.6rem;
+    margin-left: 3.5rem;
+}
+
+.directions li label {
+font-size: 1.5rem;
+font-weight: 600;
+}
+
+li img {
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+}
+/* recommendation section styles */
+
+main .daily .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(1, 1fr);
+}
+.daily {
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+}
+.daily .desco {
+    align-self: center;
+}
+
+.daily .desco h4{
+    font-size: 2rem;
+}
+
+.newsletter {
+    margin-top: 0;
+    margin-bottom: 0;
+}

@@ -1,0 +1,511 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster_1.3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+ul ul, li ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+main {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter',sans-serif;
+  gap: 5rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+
+body > .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* header styles */
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: black;
+}
+
+.logo-accent {
+  color: #ff7426;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+nav a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-links img {
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
+/* sidebar styles */
+
+.content {
+    display: flex;
+    gap: 4rem;
+}
+
+aside  {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+aside a{
+  font-weight: 600;
+    color: black
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+aside h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.suggestions article {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.desc {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.desc h3 {
+    width: 12rem;
+}
+
+.desc p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.ad {
+    height: 434px;
+    width: 400px;
+    margin-top: 4rem;
+}
+
+
+/* profile styles */
+
+.publish {
+  font-weight: 600;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile .publish {
+  margin-top: 0.5rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+   
+}
+
+.publish .date {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.85rem;
+}
+
+
+/* advertisment styles */
+
+main section .ad, main aside .ad{
+  background-image: url(../images/ad.png);
+  border-radius: 0;
+  background-size: contain;
+}
+
+/* recipe grid styles */
+
+article img {
+    border-radius: 1.35rem;
+    aspect-ratio: 29/20;
+}
+
+.recipes {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;  
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);     
+  gap: 2rem;           
+  row-gap: 3.5rem;                   
+  margin-left: -1rem;                    
+  margin-right: -1rem;
+}
+
+.recipes .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;  
+
+}
+
+.recipes .desc h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.recipes .desc p {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  width: 42rem;
+  text-align: center;
+}
+
+.recipes-grid a {
+  background-image: url(../images/recipe_card.svg);
+  background-size: cover;        
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25.7rem;
+  aspect-ratio: 1 / 1;           
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.recipes-grid .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.recipes .title {
+  margin-left: 2rem;
+}
+
+.visual {
+  position: relative;
+  overflow: hidden; 
+}
+
+.recipes-grid button{
+  background: none;
+  border: none;
+  position: absolute;
+  top: 17px;
+  right: 40px;
+  z-index: 2;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.recipes-grid img {       
+  background-position: center;
+  background-repeat: no-repeat;  
+  border-radius: 20px;
+  display: block;
+  margin: 0rem 1.3rem;
+}
+
+.info,.time,.type {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.info {
+  margin-left: -1.5rem;
+}
+
+.info p {
+  align-self: center;
+  margin-left: -0.8rem;
+}
+/* recommendation section styles */
+
+.daily {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.daily .desco {
+  display: flex;
+  gap: 7rem;
+}
+
+.daily .desco h2 {
+  font-weight: 600;
+  font-size: 2.9rem;
+  width: 35rem;
+}
+
+.daily .desco p {
+  margin-top: 2.4rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  width: 36rem;
+}
+
+.daily .recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 0.3rem;
+  column-gap: 0;
+}
+
+.daily .recipes-grid img {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.daily .recipes-grid button {
+  right: 1.3rem;
+  top: 13px;
+}
+
+.daily .recipes-grid .visual {
+  width: 100%;
+  max-height: 13rem;
+  padding: 0 0.5rem;
+}
+
+.daily .recipes-grid a{
+  background-image: none;
+  width: 19.15rem;
+}
+
+.daily .recipes-grid .info {
+  margin-left: -0.1rem;
+  gap: 1rem;
+}
+
+.daily .type p, .daily .time p {
+  margin-left: 0.5rem;
+}
+
+.daily .recipes-grid .title {
+  font-size: 1.1rem;
+  width: 19rem;
+  margin-left: 0.6rem;
+  margin-top: -0.5rem;
+}
+
+
+/* footer styles */
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-top {
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.copyright {
+  grid-column: 2;
+  text-align: center;
+}
+
+.copyright-accent {
+  color: #ff7967;
+}
+
+.social-links {
+  grid-column: 3;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+/* newsletter section styles */
+
+.newsletter {
+  margin-top: 4rem;
+  background-image: url('../images/newsletter.svg');
+  background-size: 100% 100%;
+  aspect-ratio: 1280/442;   
+  background-repeat: no-repeat;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center; 
+  gap: 6rem; 
+  margin-bottom: 6rem;
+}
+
+.motto h6 {
+  font-family: 'Inter',sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.motto h5 {
+  font-family: 'Inter',sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  width: 34rem;
+}
+
+.motto p {
+  margin-top: 2rem;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  width: 40rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+form button, .learn-more a {
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  height: 4rem;
+  width: 10rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.7rem;
+}
+
+input {
+  border: none;
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+form {
+  background-color: white;
+  height: 5.5rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  justify-content:space-between; 
+}
+
+input:focus {
+  outline: none;
+  border-color: #ddd;  
+}
+
