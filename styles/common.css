@@ -35,13 +35,15 @@ button {
   cursor: pointer;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
-  list-style: none;  
+  list-style: none;
 }
 
-ul ul, li ul {
+ul ul,
+li ul {
   list-style: none;
 }
 
@@ -54,22 +56,13 @@ header {
 }
 
 main {
-  padding: 1rem 0;
   display: flex;
   flex-direction: column;
-  font-family: 'Inter',sans-serif;
-  gap: 5rem;
+  font-family: "Inter", sans-serif;
 }
-
-.container {
-  margin: 0 auto;
-  padding: 0 5rem;
-}
-
 
 body > .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin: 0px 80px;
 }
 
 /* header styles */
@@ -77,14 +70,12 @@ body > .container {
 header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin: 40px 80px;
 }
 
 .logo-text {
   font-family: "Lobster", cursive;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: normal;
   color: black;
 }
@@ -93,86 +84,102 @@ header .container {
   color: #ff7426;
 }
 
-nav {
+header nav {
   display: flex;
-  gap: 3rem;
+  margin-left: 277px;
+  gap: 60px;
+  margin-right: 333px;
 }
 
 nav a {
   color: black;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
 }
 
-.social-links {
+header .social-links {
   display: flex;
-  gap: 2rem;
+  gap: 40px;
+  align-items: center;
 }
 
 .social-links img {
   width: 23px;
   height: 23px;
-  display: block;
+}
+
+.social-links a:first-child img {
+  width: 9.92px;
+  height: 19.84px;
+}
+
+.social-links a:nth-child(2) img {
+  width: 22px;
+  height: 17.88px;
+}
+
+.social-links a:last-child img {
+  width: 22px;
+  height: 22px;
 }
 
 /* sidebar styles */
 
 .content {
-    display: flex;
-    gap: 4rem;
+  display: flex;
+  gap: 4rem;
 }
 
-aside  {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-aside a{
+aside a {
   font-weight: 600;
-    color: black
+  color: black;
 }
 
 .suggestions {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 aside h2 {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .suggestions article {
-    display: flex;
-    gap: 1.3rem;
+  display: flex;
+  gap: 1.3rem;
 }
 
 .desc {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
 .desc h3 {
-    width: 12rem;
+  width: 12rem;
 }
 
 .desc p {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 0.85rem;
-    font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-.ad {
-    height: 434px;
-    width: 400px;
-    margin-top: 4rem;
+aside .ad {
+  height: 434px;
+  width: 400px;
+  margin-top: 4rem;
 }
-
 
 /* profile styles */
 
@@ -182,15 +189,12 @@ aside h2 {
 
 .profile {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .profile .publish {
-  margin-top: 0.5rem; 
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-   
 }
 
 .publish .date {
@@ -198,202 +202,204 @@ aside h2 {
   font-size: 0.85rem;
 }
 
-
 /* advertisment styles */
 
-main section .ad, main aside .ad{
+main section .ad,
+main aside .ad {
   background-image: url(../images/ad.png);
   border-radius: 0;
   background-size: contain;
 }
 
-/* recipe grid styles */
 
-article img {
-    border-radius: 1.35rem;
-    aspect-ratio: 29/20;
-}
-
-.recipes {
-  margin-top: 6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;  
-}
-
-.recipes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(3, 1fr);     
-  gap: 2rem;           
-  row-gap: 3.5rem;                   
-  margin-left: -1rem;                    
-  margin-right: -1rem;
-}
-
-.recipes .desc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;  
-
-}
-
-.recipes .desc h1 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 3rem;
-}
-
-.recipes .desc p {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-  width: 42rem;
-  text-align: center;
-}
-
-.recipes-grid a {
-  background-image: url(../images/recipe_card.svg);
-  background-size: cover;        
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 25.7rem;
-  aspect-ratio: 1 / 1;           
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.recipes-grid .title {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: black;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.recipes .title {
-  margin-left: 2rem;
-}
-
-.visual {
-  position: relative;
-  overflow: hidden; 
-}
-
-.recipes-grid button{
-  background: none;
-  border: none;
-  position: absolute;
-  top: 17px;
-  right: 40px;
-  z-index: 2;
-  cursor: pointer;
-  justify-self: end;
-}
-
-.recipes-grid img {       
-  background-position: center;
-  background-repeat: no-repeat;  
-  border-radius: 20px;
-  display: block;
-  margin: 0rem 1.3rem;
-}
-
-.info,.time,.type {
-  display: flex;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.info {
-  margin-left: -1.5rem;
-}
-
-.info p {
-  align-self: center;
-  margin-left: -0.8rem;
-}
 /* recommendation section styles */
 
 .daily {
-  margin-top: 7rem;
+  margin-top: 160px;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 80px;
 }
 
 .daily .desco {
   display: flex;
-  gap: 7rem;
+  gap: 153px;
 }
 
 .daily .desco h2 {
   font-weight: 600;
-  font-size: 2.9rem;
-  width: 35rem;
+  font-size: 48px;
+  width: 544px;
 }
 
 .daily .desco p {
-  margin-top: 2.4rem;
+  margin-top: 30px;
   font-weight: 400;
-  font-size: 1rem;
+  line-height: 28px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
   width: 36rem;
 }
 
 .daily .recipes-grid {
+  row-gap: 3.5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 290px);
   grid-template-rows: repeat(2, 1fr);
-  margin-left: 0.3rem;
-  column-gap: 0;
-}
-
-.daily .recipes-grid img {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.daily .recipes-grid button {
-  right: 1.3rem;
-  top: 13px;
+  column-gap: 67px;
 }
 
 .daily .recipes-grid .visual {
-  width: 100%;
-  max-height: 13rem;
-  padding: 0 0.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 290px;
+  height: 200px;
 }
 
-.daily .recipes-grid a{
+.daily .recipes-grid .visual img {
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: block;
+  margin: auto auto;
+  height: 200px;
+}
+
+.daily .recipes-grid button {
+  background: none;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  justify-self: end;
+  right: 16px;
+  top: 16px;
+}
+
+.daily .recipes-grid article {
+  width: 290px;
+}
+
+.daily .recipes-grid a {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   background-image: none;
-  width: 19.15rem;
+  width: 290px;
+  height: 319px;
 }
 
-.daily .recipes-grid .info {
-  margin-left: -0.1rem;
-  gap: 1rem;
+.daily .info {
+  display: flex;
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
 }
 
-.daily .type p, .daily .time p {
-  margin-left: 0.5rem;
+.daily .type,
+.daily .time {
+  display: flex;
+  gap: 10px;
+}
+
+.daily .type p,
+.daily .time p {
+  font-size: 14px;
+  letter-spacing: -0.28px;
+}
+
+.daily .type,
+.daily .time {
+  align-items: center;
 }
 
 .daily .recipes-grid .title {
-  font-size: 1.1rem;
-  width: 19rem;
-  margin-left: 0.6rem;
-  margin-top: -0.5rem;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-top: 16px;
+  letter-spacing: -0.72px;
+  line-height: 26px;
+  width: 290px;
 }
 
+/* newsletter section styles */
+
+.newsletter {
+  margin-top: 160px;
+  background-image: url("../images/newsletter.svg");
+  background-size: 100% 100%;
+  aspect-ratio: 1280/442;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter .motto h6 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.newsletter .motto p {
+  margin-top: 24px;
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  width: 40rem;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.newsletter form button {
+  background-color: black;
+  color: white;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  height: 60px;
+  width: 160px;
+  margin-right: 10px;
+}
+
+.newsletter input {
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 32px;
+  text-decoration: none;
+}
+
+.newsletter form {
+  background-color: white;
+  height: 80px;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+}
+
+.newsletter input:focus {
+  outline: none;
+  border-color: #ddd;
+}
 
 /* footer styles */
+
+footer {
+  margin-top: 160px;
+  margin-bottom: 48px;
+}
 
 .footer-row {
   display: flex;
@@ -404,108 +410,44 @@ article img {
 }
 
 .footer-top {
+  display: flex;
   justify-content: space-between;
 }
 
+.footer-top nav {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-top .lorem {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
 .footer-bottom {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-  padding-top: 3rem;
-  margin-top: 3rem;
+  margin-top: 48px;
+  padding-top: 48px;
   border-top: 1px solid #e0e0e0;
+  
 }
 
 .copyright {
-  grid-column: 2;
+  margin-left: 472px;
   text-align: center;
+  font-size: 18px;
+  min-width: 336px;
+  letter-spacing: -0.28px;
 }
 
 .copyright-accent {
   color: #ff7967;
 }
 
-.social-links {
-  grid-column: 3;
+footer .social-links {
   display: flex;
-  gap: 1.5rem;
-  justify-content: flex-end;
-}
-
-/* newsletter section styles */
-
-.newsletter {
-  margin-top: 4rem;
-  background-image: url('../images/newsletter.svg');
-  background-size: 100% 100%;
-  aspect-ratio: 1280/442;   
-  background-repeat: no-repeat;
-  padding: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;      
-  justify-content: center;  
-  text-align: center; 
-  gap: 6rem; 
-  margin-bottom: 6rem;
-}
-
-.motto h6 {
-  font-family: 'Inter',sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-}
-
-.motto h5 {
-  font-family: 'Inter',sans-serif;
-  font-weight: 700;
-  font-size: 48px;
-  width: 34rem;
-}
-
-.motto p {
-  margin-top: 2rem;
-  font-family: 'Inter',sans-serif;
-  font-weight: 400;
-  width: 40rem;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-form button, .learn-more a {
-  background-color: black;
-  color: white;
-  border-radius: 1rem;
-  font-family: 'Inter',sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  height: 4rem;
-  width: 10rem;
-  border: none;
-  cursor: pointer;
-  margin-right: 0.7rem;
-}
-
-input {
-  border: none;
-  font-family: 'Inter',sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-left: 1rem;
-  text-decoration: none;
-}
-
-form {
-  background-color: white;
-  height: 5.5rem;
-  width: 30rem;
-  display: flex;
+  margin-left: 414px;
+  gap: 40px;
   align-items: center;
-  border-radius: 1.5rem;
-  justify-content:space-between; 
 }
-
-input:focus {
-  outline: none;
-  border-color: #ddd;  
-}
-
