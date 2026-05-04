@@ -3,14 +3,13 @@
 .recipe {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    margin-top: 2rem;
+    margin-top: 80px;
 }
 
 .recipe h1 {
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 48px;
 }
 
 .head {
@@ -20,7 +19,6 @@
 
 .mid {
     display: flex;
-    gap: 2.3rem;
 }
 
 .prep img, .cook img {
@@ -57,9 +55,14 @@
     gap: 1rem;
 }
 
-.type p {
+.head .type {
+    display: flex;
+}
+
+.head .type p {
     margin-top: 0.2rem;
     font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .profile, .prep, .cook {
@@ -84,63 +87,83 @@
 .share {
     margin-right: 2.5rem;
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .share p {
     font-family: 'Inter',sans-serif;
     font-weight: 400;
-    margin-top: 0.8rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
+    margin-top: 16px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
 }
 
 .profile {
     padding-right: 4rem;
+    margin-top: 4px;
 }
 
 .profile .avatar {
-  background-image: url(../images/avatar.svg);
-  width: 3rem;
-  aspect-ratio: 1/1;
-  background-repeat: no-repeat;
-  background-size: contain;
+    background-image: url(../images/avatar.svg);
+    width: 3rem;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.publish {
+    padding-top: 3px;
+    gap: 8px;
 }
 
 
 /* recipe section mid part styles */
+
+.mid {
+    margin-top: 64px;
+    gap: 80px;
+}
+
+.mid > img {
+    width: 840px;
+    height: 600px;
+}
 
 .mid .nutrition {
     background-image: url(../images/nuts.png);
     padding-top: 0.5rem;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 30%;
+    width: 400px;
+    height: 600px;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .mid .nutrition div {
     display: flex;
-    margin: 0 2rem;
+    margin: 0 32px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 18px;
+    letter-spacing: -0.72px;
     justify-content:space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 1rem;
 }
 
+.mid .nutrition div:last-of-type {
+    margin-top: 6px;
+    padding-bottom: 16px;
+}
 .mid .nutrition div .field {
     color: rgba(0, 0, 0, 0.6);
-    
 }
 
 .mid .nutrition .disclaimer {
-    
     margin: 0 2rem;
-    margin-top: 10rem;
+    margin-top: 147px;
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
     line-height: 1.7rem;
@@ -148,51 +171,54 @@
 
 .mid .nutrition h2 {
     font-weight: 600;
-    margin: 0 2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    
+    margin: 16px 145px 24px 32px;
+    min-width: 238px;
+    font-size: 24px;
+    letter-spacing: -0.96px;
 }
 
 .foot {
-    font-size: 1.03rem;
-    margin-top: 2rem;
+    font-size: 16px;
+    margin-top: 80px;
     width: 81rem;
-    line-height: 1.7rem;
+    line-height: 28px;
     color: rgba(0, 0, 0, 0.6);
 }
 
+
 /* tutorial section styles */
+
 .tutorial{
     min-width: 53rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    margin-top: 80px;
 }
 
 .content {
-    gap: 3rem;
+    gap: 100px;
     width: fit-content;
-}
-
-.tutorial h4 {
-    font-size: 2.3rem;
-    
 }
 
 aside {
     margin-left: -1rem;
+    margin-top: 80px;
 }
 
 .tutorial h5 {
-    font-size: 1.5rem;
-    margin-top: 3rem;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+    margin-top: 48px;
 }
 
+.tutorial h4 {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+}
 
 .tutorial h4, .tutorial h5 {
     font-weight: 600;
-    margin-left: 1rem;
 }
 
 .steps {
@@ -202,98 +228,117 @@ aside {
 
 li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 2rem;
+    padding-bottom: 33px;
 }
 
 label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
 .ingridients label {
     font-size: 1.15rem;
 }
 
-.step {
-    gap: 1.2rem;
-    margin-top: 2rem;
+.ingridients .step {
+    gap: 24px;
+    margin-top: 33px;
+}
+
+.directions .step {
+    gap: 24px;
+    margin-top: 32px;
 }
 
 label:has(input:checked) {
-  color: rgba(0, 0, 0, 0.3);           
-  text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.3);           
+    text-decoration: line-through;
 }
 
 label input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 28px;
-  height: 28px;
-  border: 3px solid #d5e0df;
-  border-radius: 50%;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 3px solid #d5e0df;
+    border-radius: 50%;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 label input[type="checkbox"]:checked {
-  background: #000;
-  border-color: #000;
+    background: #000;
+    border-color: #000;
 }
 
 label input[type="checkbox"]:checked::after {
-  content: "";
-  position: absolute;
-  width: 0.35rem;      
-  height: 0.75rem;     
-  border: solid #fff;
-  border-width: 0 3px 3px 0;
-  left: 0.48rem;       
-  top: 0.17rem;        
-  transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    width: 0.35rem;      
+    height: 0.75rem;     
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    left: 0.48rem;       
+    top: 0.17rem;        
+    transform: rotate(45deg);
 }
 
 li p {
-    margin-top: 2rem;
+    margin-top: 24px;
     color: rgba(0, 0, 0, 0.6);
-    width: 50rem;
-    line-height: 1.6rem;
-    margin-left: 3.5rem;
+    width: 785px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    line-height: 26px;
+    margin-left: 48px;
 }
 
 .directions li label {
-font-size: 1.5rem;
-font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    font-weight: 600;
+}
+
+.tutorial .directions h4 {
+    font-size: 36px;
+    letter-spacing: -1.44px;
+}
+
+.directions li {
+    padding-bottom: 48px;
 }
 
 li img {
-    margin-top: 3rem;
-    margin-left: 3.5rem;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    margin-left: 48px;
 }
+
+
 /* recommendation section styles */
+
+.thumbnail {
+    border-radius: 20px;
+}
 
 main .daily .recipes-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(1, 1fr);
 }
-.daily {
-    margin-top: 5rem;
-    margin-bottom: 9rem;
+
+.daily .info {
+    color: rgba(0, 0, 0, 0.6);
 }
+
 .daily .desco {
     align-self: center;
 }
 
 .daily .desco h4{
     font-size: 2rem;
-}
-
-.newsletter {
-    margin-top: 0;
-    margin-bottom: 0;
 }

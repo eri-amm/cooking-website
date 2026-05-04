@@ -47,6 +47,18 @@ li ul {
   list-style: none;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -57,7 +69,10 @@ header {
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+}
+
+main * {
   font-family: "Inter", sans-serif;
 }
 
@@ -84,16 +99,19 @@ header .container {
   color: #ff7426;
 }
 
+.logo {
+  margin-right: 320px;
+}
+
 header nav {
   display: flex;
-  margin-left: 277px;
   gap: 60px;
-  margin-right: 333px;
 }
 
 nav a {
   color: black;
   font-size: 16px;
+  min-width: fit-content;
   font-weight: 600;
   font-family: "Inter", sans-serif;
 }
@@ -102,6 +120,7 @@ header .social-links {
   display: flex;
   gap: 40px;
   align-items: center;
+  margin-left: 311px;
 }
 
 .social-links img {
@@ -128,13 +147,12 @@ header .social-links {
 
 .content {
   display: flex;
-  gap: 4rem;
+  gap: 100px;
 }
 
 aside {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 aside a {
@@ -145,24 +163,31 @@ aside a {
 .suggestions {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 24px;
+}
+
+.suggestions a {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+    line-height: 28px;
 }
 
 aside h2 {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 32px;
 }
 
 .suggestions article {
   display: flex;
-  gap: 1.3rem;
+  gap: 24px;
 }
 
 .desc {
-  padding-top: 1rem;
+  padding: 16px 0px;
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 16px;
 }
 
 .desc h3 {
@@ -171,15 +196,17 @@ aside h2 {
 
 .desc p {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: -0.28px;
 }
 
 aside .ad {
   height: 434px;
   width: 400px;
-  margin-top: 4rem;
+  margin-top: 80px;
 }
+
 
 /* profile styles */
 
@@ -199,16 +226,16 @@ aside .ad {
 
 .publish .date {
   color: rgba(0, 0, 0, 0.6);
-  font-size: 0.85rem;
+  font-size: 14px;
+  letter-spacing: -0.28px;
 }
+
 
 /* advertisment styles */
 
 main section .ad,
 main aside .ad {
   background-image: url(../images/ad.png);
-  border-radius: 0;
-  background-size: contain;
 }
 
 
@@ -328,6 +355,7 @@ main aside .ad {
   width: 290px;
 }
 
+
 /* newsletter section styles */
 
 .newsletter {
@@ -362,17 +390,16 @@ main aside .ad {
   background-color: black;
   color: white;
   border-radius: 16px;
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 14px;
   height: 60px;
   width: 160px;
   margin-right: 10px;
+  letter-spacing: -0.28px;
 }
 
 .newsletter input {
   border: none;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   margin-left: 32px;
@@ -389,10 +416,6 @@ main aside .ad {
   justify-content: space-between;
 }
 
-.newsletter input:focus {
-  outline: none;
-  border-color: #ddd;
-}
 
 /* footer styles */
 
@@ -434,7 +457,7 @@ footer {
 }
 
 .copyright {
-  margin-left: 472px;
+  margin-left: 510px;
   text-align: center;
   font-size: 18px;
   min-width: 336px;
@@ -447,7 +470,7 @@ footer {
 
 footer .social-links {
   display: flex;
-  margin-left: 414px;
+  margin-left: 381.5px;
   gap: 40px;
   align-items: center;
 }
