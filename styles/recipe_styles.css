@@ -1,344 +1,350 @@
 /* recipe section styles */
 
 .recipe {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
 .recipe h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 48px;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 48px;
 }
 
-.head {
-    display: flex;
-    justify-content: space-between;
+/* recipe section header part styles */
+
+.recipe .head {
+  display: flex;
+  justify-content: space-between;
 }
 
-.mid {
-    display: flex;
+.recipe .prep img,
+.recipe .cook img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.7rem;
 }
 
-.prep img, .cook img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-top: 0.7rem;
+.recipe .prep,
+.recipe .cook {
+  gap: 0.7rem;
 }
 
-.prep, .cook {
-    gap: 0.7rem;
+.recipe .prep div,
+.recipe .cook div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
 
-.prep div, .cook div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
+.recipe .prep div p:first-child,
+.recipe .cook div p:first-child {
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
-.prep div p:first-child, .cook div p:first-child
-{
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    font-size: 0.8rem;
+.recipe .prep .duration,
+.recipe .cook .duration {
+  font-size: 0.9rem;
 }
 
-.prep .duration, .cook .duration {
-    font-size: 0.9rem;
+.recipe .credit .type {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 1.3rem;
+  gap: 1rem;
 }
 
-.credit .type {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-top: 1.3rem;
-    gap: 1rem;
+.recipe .head .type {
+  display: flex;
 }
 
-.head .type {
-    display: flex;
+.recipe .head .type p {
+  margin-top: 0.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.head .type p {
-    margin-top: 0.2rem;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.6);
+.recipe .profile,
+.recipe .prep,
+.recipe .cook {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 2rem;
 }
 
-.profile, .prep, .cook {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    padding-right: 2rem;
+.recipe .prep,
+.recipe .cook {
+  display: flex;
+  margin-top: 0.5rem;
 }
 
-.prep, .cook {
-    display: flex;
-    margin-top: 0.5rem;
+.recipe .duration {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.duration {
-    color: rgba(0, 0, 0, 0.6);
+.recipe .credit {
+  display: flex;
+  gap: 2rem;
 }
 
-.credit {
-    display: flex;
-    gap: 2rem;
+.recipe .share {
+  margin-right: 2.5rem;
+  display: flex;
+  gap: 32px;
 }
 
-.share {
-    margin-right: 2.5rem;
-    display: flex;
-    gap: 32px;
+.recipe .share p {
+  font-weight: 400;
+  margin-top: 16px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
 }
 
-.share p {
-    font-family: 'Inter',sans-serif;
-    font-weight: 400;
-    margin-top: 16px;
-    font-size: 13px;
-    letter-spacing: 1.2px;
+.recipe .profile {
+  padding-right: 4rem;
+  margin-top: 4px;
 }
 
-.profile {
-    padding-right: 4rem;
-    margin-top: 4px;
+.recipe .profile .avatar {
+  background-image: url(../images/avatar.svg);
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.profile .avatar {
-    background-image: url(../images/avatar.svg);
-    width: 3rem;
-    aspect-ratio: 1/1;
-    background-repeat: no-repeat;
-    background-size: contain;
+.recipe .publish {
+  padding-top: 3px;
+  gap: 8px;
 }
-
-.publish {
-    padding-top: 3px;
-    gap: 8px;
-}
-
 
 /* recipe section mid part styles */
 
-.mid {
-    margin-top: 64px;
-    gap: 80px;
+.recipe .mid {
+  display: flex;
+  margin-top: 64px;
+  gap: 80px;
 }
 
-.mid > img {
-    width: 840px;
-    height: 600px;
+.recipe .mid > img {
+  width: 840px;
+  height: 600px;
 }
 
-.mid .nutrition {
-    background-image: url(../images/nuts.png);
-    padding-top: 0.5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 600px;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.recipe .mid .nutrition {
+  background-image: url(../images/nuts.png);
+  padding-top: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 600px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.mid .nutrition div {
-    display: flex;
-    margin: 0 32px;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: -0.72px;
-    justify-content:space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 1rem;
+.recipe .mid .nutrition div {
+  display: flex;
+  margin: 0 32px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.72px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
 }
 
-.mid .nutrition div:last-of-type {
-    margin-top: 6px;
-    padding-bottom: 16px;
-}
-.mid .nutrition div .field {
-    color: rgba(0, 0, 0, 0.6);
+.recipe .mid .nutrition div:last-of-type {
+  margin-top: 6px;
+  padding-bottom: 16px;
 }
 
-.mid .nutrition .disclaimer {
-    margin: 0 2rem;
-    margin-top: 147px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.6);
-    line-height: 1.7rem;
+.recipe .mid .nutrition div .field {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.mid .nutrition h2 {
-    font-weight: 600;
-    margin: 16px 145px 24px 32px;
-    min-width: 238px;
-    font-size: 24px;
-    letter-spacing: -0.96px;
+.recipe .mid .nutrition .disclaimer {
+  margin: 0 2rem;
+  margin-top: 147px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.7rem;
 }
 
-.foot {
-    font-size: 16px;
-    margin-top: 80px;
-    width: 81rem;
-    line-height: 28px;
-    color: rgba(0, 0, 0, 0.6);
+.recipe .mid .nutrition h2 {
+  font-weight: 600;
+  margin: 16px 145px 24px 32px;
+  min-width: 238px;
+  font-size: 24px;
+  letter-spacing: -0.96px;
 }
 
+/* recipe section footer part styles */
+
+.recipe .foot {
+  font-size: 16px;
+  margin-top: 80px;
+  width: 81rem;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
 
 /* tutorial section styles */
 
-.tutorial{
-    min-width: 53rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    margin-top: 80px;
+.content .tutorial {
+  min-width: 53rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 80px;
 }
 
 .content {
-    gap: 100px;
-    width: fit-content;
+  gap: 100px;
+  width: fit-content;
 }
 
-aside {
-    margin-left: -1rem;
-    margin-top: 80px;
+.content aside {
+  margin-left: -1rem;
+  margin-top: 80px;
 }
 
 .tutorial h5 {
-    font-size: 24px;
-    letter-spacing: -0.96px;
-    margin-top: 48px;
+  font-size: 24px;
+  letter-spacing: -0.96px;
+  margin-top: 48px;
 }
 
 .tutorial h4 {
-    font-size: 36px;
-    letter-spacing: -1.44px;
+  font-size: 36px;
+  letter-spacing: -1.44px;
 }
 
-.tutorial h4, .tutorial h5 {
-    font-weight: 600;
+.tutorial h4,
+.tutorial h5 {
+  font-weight: 600;
 }
 
-.steps {
-    display: flex;
-    flex-direction: column;
+.tutorial .steps {
+  display: flex;
+  flex-direction: column;
 }
 
-li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 33px;
+.tutorial li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 33px;
 }
 
-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+.tutorial label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
-.ingridients label {
-    font-size: 1.15rem;
+.tutorial .ingridients label {
+  font-size: 1.15rem;
 }
 
-.ingridients .step {
-    gap: 24px;
-    margin-top: 33px;
+.tutorial .ingridients .step {
+  gap: 24px;
+  margin-top: 33px;
 }
 
-.directions .step {
-    gap: 24px;
-    margin-top: 32px;
+.tutorial .directions .step {
+  gap: 24px;
+  margin-top: 32px;
 }
 
-label:has(input:checked) {
-    color: rgba(0, 0, 0, 0.3);           
-    text-decoration: line-through;
+.tutorial label:has(input:checked) {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: line-through;
 }
 
-label input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 28px;
-    height: 28px;
-    border: 3px solid #d5e0df;
-    border-radius: 50%;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.2s ease;
+.tutorial label input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border: 3px solid #d5e0df;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-label input[type="checkbox"]:checked {
-    background: #000;
-    border-color: #000;
+.tutorial label input[type="checkbox"]:checked {
+  background: #000;
+  border-color: #000;
 }
 
-label input[type="checkbox"]:checked::after {
-    content: "";
-    position: absolute;
-    width: 0.35rem;      
-    height: 0.75rem;     
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    left: 0.48rem;       
-    top: 0.17rem;        
-    transform: rotate(45deg);
+.tutorial label input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 0.35rem;
+  height: 0.75rem;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  left: 0.48rem;
+  top: 0.17rem;
+  transform: rotate(45deg);
 }
 
-li p {
-    margin-top: 24px;
-    color: rgba(0, 0, 0, 0.6);
-    width: 785px;
-    font-size: 16px;
-    letter-spacing: -0.32px;
-    line-height: 26px;
-    margin-left: 48px;
+.tutorial li p {
+  margin-top: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 785px;
+  font-size: 16px;
+  letter-spacing: -0.32px;
+  line-height: 26px;
+  margin-left: 48px;
 }
 
-.directions li label {
-    font-size: 24px;
-    letter-spacing: -0.48px;
-    font-weight: 600;
+.tutorial .directions li label {
+  font-size: 24px;
+  letter-spacing: -0.48px;
+  font-weight: 600;
 }
 
 .tutorial .directions h4 {
-    font-size: 36px;
-    letter-spacing: -1.44px;
+  font-size: 36px;
+  letter-spacing: -1.44px;
 }
 
-.directions li {
-    padding-bottom: 48px;
+.tutorial .directions li {
+  padding-bottom: 48px;
 }
 
-li img {
-    margin-top: 48px;
-    margin-bottom: 24px;
-    margin-left: 48px;
+.tutorial li img {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  margin-left: 48px;
 }
-
 
 /* recommendation section styles */
 
 .thumbnail {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 main .daily .recipes-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(1, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 
 .daily .info {
-    color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.daily .desco {
-    align-self: center;
+.daily .description {
+  align-self: center;
 }
 
-.daily .desco h4{
-    font-size: 2rem;
+.daily .description h4 {
+  font-size: 2rem;
 }

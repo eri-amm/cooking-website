@@ -23,10 +23,34 @@
   font-style: normal;
 }
 
+/* general styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+main * {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+footer,
+.container {
+  margin: 0px 80px;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -59,27 +83,6 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-header {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-main {
-  display: flex;
-  flex-direction: column; 
-}
-
-main * {
-  font-family: "Inter", sans-serif;
-}
-
-body > .container {
-  margin: 0px 80px;
-}
-
 /* header styles */
 
 header .container {
@@ -87,6 +90,20 @@ header .container {
   align-items: center;
   margin: 40px 80px;
 }
+
+header nav {
+  display: flex;
+  gap: 60px;
+}
+
+header .social-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-left: 311px;
+}
+
+/* header & footer styles */
 
 .logo-text {
   font-family: "Lobster", cursive;
@@ -103,24 +120,12 @@ header .container {
   margin-right: 320px;
 }
 
-header nav {
-  display: flex;
-  gap: 60px;
-}
-
 nav a {
   color: black;
   font-size: 16px;
   min-width: fit-content;
   font-weight: 600;
   font-family: "Inter", sans-serif;
-}
-
-header .social-links {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  margin-left: 311px;
 }
 
 .social-links img {
@@ -167,9 +172,9 @@ aside a {
 }
 
 .suggestions a {
-    font-size: 20px;
-    letter-spacing: -0.8px;
-    line-height: 28px;
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  line-height: 28px;
 }
 
 aside h2 {
@@ -183,18 +188,18 @@ aside h2 {
   gap: 24px;
 }
 
-.desc {
+.attribution {
   padding: 16px 0px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.desc h3 {
+.attribution h3 {
   width: 12rem;
 }
 
-.desc p {
+.attribution p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   font-weight: 600;
@@ -206,7 +211,6 @@ aside .ad {
   width: 400px;
   margin-top: 80px;
 }
-
 
 /* profile styles */
 
@@ -230,14 +234,12 @@ aside .ad {
   letter-spacing: -0.28px;
 }
 
-
 /* advertisment styles */
 
 main section .ad,
 main aside .ad {
   background-image: url(../images/ad.png);
 }
-
 
 /* recommendation section styles */
 
@@ -248,18 +250,18 @@ main aside .ad {
   gap: 80px;
 }
 
-.daily .desco {
+.daily .description {
   display: flex;
   gap: 153px;
 }
 
-.daily .desco h2 {
+.daily .description h2 {
   font-weight: 600;
   font-size: 48px;
   width: 544px;
 }
 
-.daily .desco p {
+.daily .description p {
   margin-top: 30px;
   font-weight: 400;
   line-height: 28px;
@@ -355,7 +357,6 @@ main aside .ad {
   width: 290px;
 }
 
-
 /* newsletter section styles */
 
 .newsletter {
@@ -416,7 +417,6 @@ main aside .ad {
   justify-content: space-between;
 }
 
-
 /* footer styles */
 
 footer {
@@ -453,7 +453,6 @@ footer {
   margin-top: 48px;
   padding-top: 48px;
   border-top: 1px solid #e0e0e0;
-  
 }
 
 .copyright {

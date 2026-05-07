@@ -1,23 +1,4 @@
 /* carousel section styles */
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
 
 .carousel {
   margin-top: 40px;
@@ -32,18 +13,18 @@
   margin: 20px 0px;
 }
 
-.recipe-card {
+.carousel .recipe-card {
   position: relative;
   display: flex;
   border-radius: 3rem;
   overflow: hidden;
   background-color: #fff;
   width: 100%;
-  height: 640px; 
+  height: 640px;
 }
 
-.blue-section {
-  width: 50%; 
+.carousel .blue-section {
+  width: 50%;
   height: 100%;
   background-image: url("../images/bluebg.png");
   background-size: cover;
@@ -52,7 +33,7 @@
   padding-left: 50px;
 }
 
-.food-section {
+.carousel .food-section {
   width: 50%;
   height: 100%;
   display: flex;
@@ -61,12 +42,12 @@
   background-color: #fff;
 }
 
-.plate {
+.carousel .plate {
   width: 100%;
   height: auto;
 }
 
-.badge {
+.carousel .badge {
   position: absolute;
   top: 30px;
   left: 50%;
@@ -87,39 +68,40 @@
   margin-bottom: 32px;
 }
 
-.carousel .topic img{
+.carousel .topic img {
   width: 24px;
   height: 24px;
 }
 
-.carousel .topic h3{
+.carousel .topic h3 {
   font-size: 14px;
   letter-spacing: -0.28px;
   font-weight: 600;
   align-self: center;
 }
 
-.carousel .deso h3 {
+.carousel .properties h3 {
   font-size: 64px;
   font-weight: 600;
   letter-spacing: -2.56px;
   width: 520px;
 }
 
-.carousel .deso {
+.carousel .properties {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.carousel .deso p {
+.carousel .properties p {
   color: rgba(0, 0, 0, 0.6);
   width: 35rem;
   font-size: 16px;
   line-height: 28px;
 }
 
-.carousel .type, .carousel .time {
+.carousel .type,
+.carousel .time {
   background-color: rgba(0, 0, 0, 0.05);
   height: 40px;
   border-radius: 30px;
@@ -127,7 +109,7 @@
   gap: 10px;
 }
 
-.carousel .type{
+.carousel .type {
   width: 119px;
 }
 
@@ -155,24 +137,24 @@
   margin-bottom: 104px;
 }
 
-.carousel .idk {
+.carousel .card-bottom {
   display: flex;
   gap: 210px;
 }
 
-.carousel .idk a div{
+.carousel .card-bottom a div {
   display: flex;
   gap: 15px;
 }
 
-.carousel .idk a p{
+.carousel .card-bottom a p {
   font-size: 14px;
   letter-spacing: -0.28px;
   font-weight: 600;
   align-self: center;
 }
 
-.carousel .idk a{
+.carousel .card-bottom a {
   display: flex;
   padding: 18px 36px;
   color: white;
@@ -184,27 +166,27 @@
   height: 60px;
 }
 
-.carousel .idk a img{
+.carousel .card-bottom a img {
   height: 24px;
   width: 24px;
 }
 
-.profile {
+.carousel .profile {
   height: fit-content;
   margin: 4.5px 0px;
 }
 
-.profile .author {
+.carousel .profile .author {
   margin-top: 3px;
   margin-bottom: 8.5px;
 }
-.profile .avatar {
+
+.carousel .profile .avatar {
   background-image: url(../images/avatar.svg);
   width: 50px;
   height: 50px;
   align-self: center;
 }
-
 
 /* category section styles */
 
@@ -212,14 +194,14 @@
   display: flex;
   justify-content: space-between;
   gap: 56px;
- }
+}
 
-.cat-list a {    
+.cat-list a {
   background-repeat: no-repeat;
   background-position: center;
-  width: 180px;           
+  width: 180px;
   height: 202px;
-  text-align: center;  
+  text-align: center;
   padding-top: 150px;
   padding-bottom: 30px;
   font-size: 18px;
@@ -235,20 +217,20 @@
   gap: 80px;
 }
 
-.label {
+.heading {
   display: flex;
   justify-content: space-between;
 }
 
-.label p {
-  font-size: 48px;         
-  font-weight: 600;   
+.heading p {
+  font-size: 48px;
+  font-weight: 600;
   letter-spacing: -1.92px;
   color: black;
 }
 
-.label a {
-  background-color: #E7FAFE;
+.heading a {
+  background-color: #e7fafe;
   color: black;
   border-radius: 16px;
   font-weight: 600;
@@ -261,49 +243,47 @@
   padding: 21px 27px;
 }
 
-
 .cat-list a:nth-child(1) {
-  background-image: url('../images/breakfast.svg');
+  background-image: url("../images/breakfast.svg");
 }
 
 .cat-list a:nth-child(2) {
-  background-image: url('../images/vegan.svg');
+  background-image: url("../images/vegan.svg");
 }
 
 .cat-list a:nth-child(3) {
-  background-image: url('../images/meat.svg');
+  background-image: url("../images/meat.svg");
 }
 
 .cat-list a:nth-child(4) {
-  background-image: url('../images/dessert.svg');
+  background-image: url("../images/dessert.svg");
 }
 
 .cat-list a:nth-child(5) {
-  background-image: url('../images/lunch.svg');
+  background-image: url("../images/lunch.svg");
 }
 
 .cat-list a:nth-child(6) {
-  background-image: url('../images/chocolate.svg');
+  background-image: url("../images/chocolate.svg");
 }
-
 
 /* recipes-grid section styles */
 
-.recipes .desc {
+.recipes .attribution {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
 
-.recipes .desc h1 {
+.recipes .attribution h1 {
   text-align: center;
   font-weight: 600;
   font-size: 48px;
   letter-spacing: -1.92px;
 }
 
-.recipes .desc p {
+.recipes .attribution p {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   width: 706px;
@@ -419,11 +399,11 @@
   justify-content: space-between;
 }
 
-.chef {
+.learn-more .chef {
   background-image: url(../images/chef.svg);
-  background-size: contain;     
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 710px; 
+  width: 710px;
   height: 597px;
 }
 
@@ -466,7 +446,6 @@
   padding: 21px 52px;
 }
 
-
 /* insta section styles */
 
 .insta {
@@ -479,28 +458,28 @@
   height: 964px;
 }
 
-.insta .desc {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
+.insta .attribution {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
 }
 
-.insta .desc h4{
+.insta .attribution h4 {
   font-size: 48px;
   letter-spacing: -1.92px;
   font-weight: 600;
 }
 
-.insta .desc p {
+.insta .attribution p {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   width: 836px;
-} 
+}
 
 .social-posts {
   display: flex;
@@ -526,7 +505,6 @@
   height: 60px;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .ref {
