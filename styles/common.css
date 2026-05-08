@@ -363,10 +363,13 @@ main aside .ad {
 
 .newsletter {
   margin-top: 160px;
-  background-image: url("../images/newsletter.svg");
-  background-size: 100% 100%;
+  background-image: url("../images/newsletter-cover.png");
+  border-radius: 60px;
+  background-color: #e7f9fd;
   aspect-ratio: 1280/442;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   align-items: center;

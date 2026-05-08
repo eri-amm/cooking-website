@@ -97,6 +97,17 @@
   gap: 32px;
 }
 
+.recipe .share button > div {
+  background-color: #e7f9fd;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.recipe .share img {
+  margin: 28px;
+}
+
 .recipe .share p {
   font-weight: 400;
   margin-top: 16px;
@@ -137,7 +148,7 @@
 }
 
 .recipe .mid .nutrition {
-  background-image: url(../images/nuts.png);
+  background-color: #e7f9fd;
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
