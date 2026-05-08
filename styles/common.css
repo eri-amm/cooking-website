@@ -178,7 +178,8 @@ aside a {
 }
 
 aside h2 {
-  font-size: 2rem;
+  font-size: 32px;
+  letter-spacing: -1.28px;
   font-weight: 600;
   margin-bottom: 32px;
 }
@@ -196,7 +197,7 @@ aside h2 {
 }
 
 .attribution h3 {
-  width: 12rem;
+  width: 192px;
 }
 
 .attribution p {
@@ -258,6 +259,7 @@ main aside .ad {
 .daily .description h2 {
   font-weight: 600;
   font-size: 48px;
+  letter-spacing: -1.92px;
   width: 544px;
 }
 
@@ -267,11 +269,11 @@ main aside .ad {
   line-height: 28px;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
-  width: 36rem;
+  width: 576px;
 }
 
 .daily .recipes-grid {
-  row-gap: 3.5rem;
+  row-gap: 56px;
   display: grid;
   grid-template-columns: repeat(4, 290px);
   grid-template-rows: repeat(2, 1fr);
@@ -373,8 +375,9 @@ main aside .ad {
 }
 
 .newsletter .motto h6 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 48px;
+  letter-spacing: -1.92px;
 }
 
 .newsletter .motto p {
@@ -382,7 +385,7 @@ main aside .ad {
   margin-bottom: 64px;
   font-weight: 400;
   font-size: 16px;
-  width: 40rem;
+  width: 640px;
   line-height: 28px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -403,6 +406,7 @@ main aside .ad {
   border: none;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: -0.28px;
   margin-left: 32px;
   text-decoration: none;
 }
@@ -413,7 +417,7 @@ main aside .ad {
   width: 480px;
   display: flex;
   align-items: center;
-  border-radius: 1.5rem;
+  border-radius: 24px;
   justify-content: space-between;
 }
 

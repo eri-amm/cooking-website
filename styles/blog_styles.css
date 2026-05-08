@@ -27,7 +27,7 @@
 
 .search-bar form {
   display: flex;
-  margin: 0 20rem;
+  margin: 0 320px;
   width: 700px;
   height: 80px;
   border-radius: 24px;
@@ -74,7 +74,7 @@
 }
 
 .articles .details {
-  min-width: 20rem;
+  min-width: 320px;
   display: flex;
   gap: 32px;
   flex-direction: column;
@@ -99,7 +99,7 @@
 }
 
 .articles .details .caption {
-  width: 30rem;
+  width: 480px;
   text-align: start;
   font-size: 16px;
   line-height: 28px;
@@ -174,9 +174,9 @@
   width: 64px;
   height: 64px;
   text-align: center;
-  padding-top: 1.3rem;
-  font-size: 1.2rem;
-  border-radius: 1rem;
+  padding-top: 21px;
+  font-size: 18px;
+  border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 

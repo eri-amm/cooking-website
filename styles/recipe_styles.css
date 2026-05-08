@@ -7,9 +7,10 @@
 }
 
 .recipe h1 {
-  font-size: 4rem;
+  font-size: 64px;
   font-weight: 600;
   margin-bottom: 48px;
+  letter-spacing: -2.56px;
 }
 
 /* recipe section header part styles */
@@ -21,40 +22,42 @@
 
 .recipe .prep img,
 .recipe .cook img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 0.7rem;
+  width: 24px;
+  height: 24px;
+  margin-top: 11px;
 }
 
 .recipe .prep,
 .recipe .cook {
-  gap: 0.7rem;
+  gap: 11px;
 }
 
 .recipe .prep div,
 .recipe .cook div {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 11px;
 }
 
 .recipe .prep div p:first-child,
 .recipe .cook div p:first-child {
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.2px;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 12px;
 }
 
 .recipe .prep .duration,
 .recipe .cook .duration {
-  font-size: 0.9rem;
+  font-size: 14px;
+  letter-spacing: -0.28px;
 }
 
 .recipe .credit .type {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 1.3rem;
-  gap: 1rem;
+  width: 24px;
+  height: 24px;
+  letter-spacing: -0.28px;
+  margin-top: 18px;
+  gap: 16px;
 }
 
 .recipe .head .type {
@@ -62,22 +65,21 @@
 }
 
 .recipe .head .type p {
-  margin-top: 0.2rem;
+  margin-top: 3px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.recipe .profile,
 .recipe .prep,
 .recipe .cook {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-  padding-right: 2rem;
+  padding-right: 32px;
 }
 
 .recipe .prep,
 .recipe .cook {
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 8px;
 }
 
 .recipe .duration {
@@ -86,11 +88,11 @@
 
 .recipe .credit {
   display: flex;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .recipe .share {
-  margin-right: 2.5rem;
+  margin-right: 40px;
   display: flex;
   gap: 32px;
 }
@@ -103,7 +105,8 @@
 }
 
 .recipe .profile {
-  padding-right: 4rem;
+  padding-right: 58px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 4px;
 }
 
@@ -135,12 +138,11 @@
 
 .recipe .mid .nutrition {
   background-image: url(../images/nuts.png);
-  padding-top: 0.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
   height: 600px;
-  border-radius: 2rem;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -154,7 +156,7 @@
   letter-spacing: -0.72px;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
 }
 
 .recipe .mid .nutrition div:last-of-type {
@@ -167,11 +169,11 @@
 }
 
 .recipe .mid .nutrition .disclaimer {
-  margin: 0 2rem;
+  margin: 0 32px;
   margin-top: 147px;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
-  line-height: 1.7rem;
+  line-height: 28px;
 }
 
 .recipe .mid .nutrition h2 {
@@ -187,7 +189,7 @@
 .recipe .foot {
   font-size: 16px;
   margin-top: 80px;
-  width: 81rem;
+  width: 1280px;
   line-height: 28px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -195,10 +197,9 @@
 /* tutorial section styles */
 
 .content .tutorial {
-  min-width: 53rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 88px;
   margin-top: 80px;
 }
 
@@ -208,7 +209,6 @@
 }
 
 .content aside {
-  margin-left: -1rem;
   margin-top: 80px;
 }
 
@@ -218,12 +218,12 @@
   margin-top: 48px;
 }
 
-.tutorial h4 {
+.tutorial h2 {
   font-size: 36px;
   letter-spacing: -1.44px;
 }
 
-.tutorial h4,
+.tutorial h2,
 .tutorial h5 {
   font-weight: 600;
 }
@@ -246,7 +246,8 @@
 }
 
 .tutorial .ingridients label {
-  font-size: 1.15rem;
+  font-size: 18px;
+  letter-spacing: -0.36px;
 }
 
 .tutorial .ingridients .step {
@@ -346,5 +347,7 @@ main .daily .recipes-grid {
 }
 
 .daily .description h4 {
-  font-size: 2rem;
+  font-size: 36px;
+  letter-spacing: -1.44px;
+  font-weight: 600;
 }

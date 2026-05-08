@@ -4,8 +4,8 @@
   margin-top: 40px;
   display: flex;
   gap: 40px;
-  margin-left: -5rem;
-  margin-right: -5rem;
+  margin-left: -80px;
+  margin-right: -80px;
 }
 
 .carousel > img {
@@ -16,7 +16,7 @@
 .carousel .recipe-card {
   position: relative;
   display: flex;
-  border-radius: 3rem;
+  border-radius: 48px;
   overflow: hidden;
   background-color: #fff;
   width: 100%;
@@ -95,7 +95,7 @@
 
 .carousel .properties p {
   color: rgba(0, 0, 0, 0.6);
-  width: 35rem;
+  width: 560px;
   font-size: 16px;
   line-height: 28px;
 }
@@ -120,8 +120,8 @@
 .carousel .info img {
   width: 24px;
   height: 24px;
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  margin-top: 8px;
+  margin-left: 16px;
 }
 
 .carousel .info p {
@@ -159,9 +159,8 @@
   padding: 18px 36px;
   color: white;
   background-color: black;
-  width: 12rem;
-  border-radius: 1rem;
-  height: 3.6rem;
+  width: 192px;
+  border-radius: 16px;
   width: 200px;
   height: 60px;
 }
@@ -336,13 +335,12 @@
   display: block;
   width: 368px;
   height: 250px;
-  margin: 0rem 1.3rem;
+  margin: 0 16px;
 }
 
 .recipes .recipes-grid .title {
   font-weight: 600;
   margin: 24px 24px 32px 24px;
-  font-size: 1.5rem;
   color: black;
   display: flex;
   flex-direction: column;
@@ -375,7 +373,6 @@
 .time,
 .type {
   display: flex;
-  font-size: 0.9rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -452,8 +449,8 @@
   margin-top: 160px;
   display: flex;
   flex-direction: column;
-  margin-left: -5rem;
-  margin-right: -5rem;
+  margin-left: -80px;
+  margin-right: -80px;
   background-image: url(../images/instacard.png);
   height: 964px;
 }
