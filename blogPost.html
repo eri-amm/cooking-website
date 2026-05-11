@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us Page</title>
+    <title>Blog Post Page</title>
     <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/contact_styles.css" />
+    <link rel="stylesheet" href="styles/blogPost_styles.css" />
   </head>
 
   <body>
@@ -38,62 +38,104 @@
     </header>
 
     <main class="container">
-      <section class="ticket">
-        <h1>Contact us</h1>
-        <div>
-        <div class="banner">
-          <img src="images/happy_chef.png" alt="Happy chef" />
+      <section class="post-heading">
+        <h1>Full Guide to Becoming a Professional Chef</h1>
+        <div class="profile">
+          <div class="avatar"></div>
+          <div class="publish">
+            <p class="author">John Smith</p>
+            <p class="date">15 March 2022</p>
+          </div>
         </div>
-        <form class="user-info">
-          <div class="form-item">
-            <label for="name">NAME</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name..."
-              required
-            />
-          </div>
-          <div class="form-item">
-            <label for="email">EMAIL ADDRESS</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Your email address..."
-              required
-            />
-          </div>
-          <div class="form-item">
-            <label for="subject">SUBJECT</label>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Enter subject..."
-              required
-            />
-          </div>
-          <div class="form-item">
-            <label for="enquiry-type">ENQUIRY TYPE</label>
-            <select id="enquiry-type" name="enquiry_type">
-              <option value="advertising">Advertising</option>
-              <option value="support">Customer Support</option>
-              <option value="partnership">Partnership</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-item">
-            <label for="message">MESSAGES</label>
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Enter your messages..."
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
+          ultrices odio. Nulla at congue diam, at dignissim turpis. Ut vehicula
+          sed velit a faucibus. In feugiat vestibulum velit vel pulvinar.
+        </p>
+        <img src="images/bpostpic.png" alt="Professional chef cooking" />
       </section>
+
+      <div class="content">
+        <section class="post-content">
+          <div class="post-section">
+            <h2>How did you start out in the food industry?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut
+              vehicula sed velit a faucibus. In feugiat vestibulum velit vel
+              pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut
+              suscipit.
+            </p>
+          </div>
+          <div class="post-section">
+            <h2>What do you like most about your job?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut
+              vehicula sed velit a faucibus. In feugiat vestibulum velit vel
+              pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut
+              suscipit.
+            </p>
+          </div>
+          <div class="post-section">
+            <h2>Do you cook at home on your days off?</h2>
+            <img src="images/bpostsecpic.png" alt="Woman cooking" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut
+              vehicula sed velit a faucibus. In feugiat vestibulum velit vel
+              pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut
+              suscipit.
+            </p>
+          </div>
+          <div class="post-section">
+            <h2>
+              What would your advice be to young people looking to get their
+              foot in the door?
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut
+              vehicula sed velit a faucibus. In feugiat vestibulum velit vel
+              pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut
+              suscipit.
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur ac ultrices odio.”
+            </p>
+          </div>
+          <div class="post-section">
+            <h2>
+              What is the biggest misconception that people have about being a
+              professional chef?
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio. Nulla at congue diam, at dignissim turpis. Ut
+              vehicula sed velit a faucibus. In feugiat vestibulum velit vel
+              pulvinar. Fusce id mollis ex. Praesent feugiat elementum ex ut
+              suscipit.
+            </p>
+          </div>
+        </section>
+        <aside class="sidebar">
+          <h3>SHARE THIS ON:</h3>
+          <div class="social-links">
+            <a href="facebook.com">
+              <img src="images/facebook.svg" alt="Facebook icon" />
+            </a>
+            <a href="x.com">
+              <img src="images/twitter.svg" alt="X icon" />
+            </a>
+            <a href="Instagram.com">
+              <img src="images/instagram.svg" alt="Instagram icon" />
+            </a>
+          </div>
+        </aside>
+      </div>
 
       <section class="newsletter">
         <div class="motto">
@@ -264,7 +306,6 @@
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>

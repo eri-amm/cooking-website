@@ -1,0 +1,166 @@
+/* heading styles */
+
+.post-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.post-heading > h1 {
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -2.56px;
+}
+
+.post-heading .profile {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.post-heading .avatar {
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/avatar.svg);
+  height: 40px;
+}
+
+.post-heading .publish {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.post-heading .publish .author {
+  padding: 10px 0;
+  font-size: 16px;
+  height: 40px;
+  letter-spacing: -0.32px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 61px;
+  font-weight: 700;
+  color: black;
+}
+
+.post-heading > p {
+  text-align: center;
+  width: 1059px;
+  line-height: 28px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.post-heading > img {
+  margin-top: 64px;
+  width: 100%;
+  height: 650px;
+  border-radius: 30px;
+}
+
+/* sidebar styles */
+
+.sidebar {
+  margin-right: 110px;
+}
+
+.sidebar > h3 {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+.sidebar .social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  gap: 48px;
+}
+
+/* post content styles */
+
+.content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  width: 920px;
+  gap: 64px;
+}
+
+.post-content .post-section {
+  margin-left: 100px;
+}
+
+.post-content div:nth-child(4) {
+  width: 854px;
+}
+
+.post-content .post-section > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.96px;
+  margin-bottom: 24px;
+}
+
+.post-content .post-section > img {
+  margin-bottom: 32px;
+}
+
+.post-content .post-section > p {
+  font-size: 16px;
+  width: 839px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.post-content .quote {
+  width: 920px;
+  margin-left: 56px;
+  height: 224px;
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  padding: 48px 40px;
+  letter-spacing: -1.44px;
+  line-height: 64px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* recommendation section styles */
+
+.thumbnail {
+  border-radius: 20px;
+}
+
+main .daily .recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.daily .info {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.daily .description {
+  align-self: center;
+}
+
+.daily .description h4 {
+  font-size: 36px;
+  letter-spacing: -1.44px;
+  font-weight: 600;
+}
