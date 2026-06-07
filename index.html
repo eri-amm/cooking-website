@@ -6,7 +6,6 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/home_styles.css" />
-    <link rel="stylesheet" />
   </head>
 
   <body>
@@ -18,12 +17,12 @@
           >
         </div>
         <nav>
-          <a href="index.html">Home</a>
-          <a href="recipes.html">Recipes</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-          <a href="about_us.html">About us</a>
-        </nav>
+  <a href="index.html" data-page="index.html">Home</a>
+  <a href="recipe.html" data-page="recipe.html">Recipes</a>
+  <a href="blog.html" data-page="blog.html">Blog</a>
+  <a href="contact.html" data-page="contact.html">Contact</a>
+  <a href="about_us.html" data-page="about_us.html">About us</a>
+</nav>
         <div class="social-links">
           <a href="facebook.com">
             <img src="images/facebook.svg" alt="Facebook icon" />
@@ -76,12 +75,12 @@
                   <p class="date">15 March 2022</p>
                 </div>
               </div>
-              <a href="recipe.html">
+              <button id="view-recipe-btn">
                 <div>
                   <p>View Recipes</p>
                   <img src="images/play.svg" />
                 </div>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -792,11 +791,11 @@
         </div>
 
         <nav>
-          <a href="recipes.html">Recipes</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-          <a href="about_us.html">About us</a>
-        </nav>
+  <a href="recipe.html" data-page="recipe.html">Recipes</a>
+  <a href="blog.html" data-page="blog.html">Blog</a>
+  <a href="contact.html" data-page="contact.html">Contact</a>
+  <a href="about_us.html" data-page="about_us.html">About us</a>
+</nav>
       </div>
 
       <div class="footer-row footer-bottom">
@@ -820,5 +819,8 @@
         </div>
       </div>
     </footer>
+    
+    <script src="scripts/common.js"></script>
+    <script src="scripts/home_script.js"></script>
   </body>
 </html>

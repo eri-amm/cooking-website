@@ -141,6 +141,10 @@
 
 /* recommendation section styles */
 
+.daily {
+  position: relative;
+}
+
 .thumbnail {
   border-radius: 20px;
 }
@@ -163,4 +167,29 @@ main .daily .recipes-grid {
   font-size: 36px;
   letter-spacing: -1.44px;
   font-weight: 600;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: white;
+  background: black;
+  cursor: pointer;
+  z-index: 10;
+  margin: 0 -60px;
+}
+
+.carousel-btn-left {
+  font-size: large;
+  left: 0;
+}
+
+.carousel-btn-right {
+  font-size: large;
+  right: 0;
 }

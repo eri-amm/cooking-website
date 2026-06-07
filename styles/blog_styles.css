@@ -1,3 +1,9 @@
+/* utility styles*/
+
+.hidden {
+  display: none !important ;
+}
+
 /* search section styles */
 
 .search-bar {
@@ -169,18 +175,17 @@
   gap: 16px;
 }
 
-.pagination a {
+.pagination button {
   color: black;
   width: 64px;
   height: 64px;
   text-align: center;
-  padding-top: 21px;
   font-size: 18px;
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.pagination a:first-child {
+.pagination button.active {
   color: white;
   background-color: black;
 }

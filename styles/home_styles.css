@@ -155,19 +155,19 @@
   gap: 210px;
 }
 
-.carousel .card-bottom a div {
+.carousel .card-bottom button div {
   display: flex;
   gap: 15px;
 }
 
-.carousel .card-bottom a p {
+.carousel .card-bottom button p {
   font-size: 14px;
   letter-spacing: -0.28px;
   font-weight: 600;
   align-self: center;
 }
 
-.carousel .card-bottom a {
+.carousel .card-bottom button {
   display: flex;
   padding: 18px 36px;
   color: white;
@@ -178,7 +178,7 @@
   height: 60px;
 }
 
-.carousel .card-bottom a img {
+.carousel .card-bottom button img {
   height: 24px;
   width: 24px;
 }
