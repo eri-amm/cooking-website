@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </article>
     `;
   }
-
+// search functionality
   function applySearchFilter() {
     const articles = articlesContainer.querySelectorAll("article");
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function renderPage(pageNumber) {
     currentPage = pageNumber;
-    const currentPageCards = pageData[pageNumber] || [];
+    const currentPageCards = pageData[pageNumber];
 
     articlesContainer.innerHTML = currentPageCards.map(createArticle).join("");
 

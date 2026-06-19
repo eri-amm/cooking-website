@@ -10,11 +10,10 @@ navLinks.forEach((link) => {
   });
 });
 
-// article click → recipe.html
+// article click
 const articles = document.querySelectorAll("article");
 
 articles.forEach((article) => {
-  // skip articles inside this section
   if (article.closest(".container.content.articles")) return;
 
   article.addEventListener("click", (event) => {
