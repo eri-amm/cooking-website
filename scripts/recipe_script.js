@@ -57,7 +57,14 @@ function populateRecipeUI(data) {
   const avatarElement = document.querySelector(".credit .profile .avatar");
 
   if (avatarElement) {
-    avatarElement.style.backgroundImage = `url('${data.author.image}')`;
+    const imgTester = new Image();
+    imgTester.onload = () => {
+      avatarElement.style.backgroundImage = `url('${data.author.image}')`;
+    };
+    imgTester.onerror = () => {
+      avatarElement.style.backgroundImage = `url('/images/avatar.svg')`; 
+    };
+    imgTester.src = data.author.image;
   }
 
   document.querySelector(".recipe .prep .duration").textContent = data.prepTime;

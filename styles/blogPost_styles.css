@@ -271,21 +271,17 @@ main .daily .recipes-grid {
     gap: 20px;
   }
 
-  .recipes-grid {
-    overflow: hidden;
-  }
-
   main .daily .recipes-grid {
     display: flex;
-    gap: 0;
+    flex-direction: column;
+    gap: 30px;
   }
 
   main .daily .recipes-grid > article {
     flex: 0 0 100%;
   }
   .carousel-btn {
-    margin: -10px;
-    margin-top: 5px;
+    display:none;
   }
   main .daily .recipes-grid article a {
     width: 75%;
