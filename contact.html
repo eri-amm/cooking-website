@@ -10,32 +10,50 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <span class="logo-text"
-            >Foodieland<span class="logo-accent">.</span></span
-          >
-        </div>
-        <nav>
-  <a href="index.html" data-page="index.html">Home</a>
-  <a href="recipe.html" data-page="recipe.html">Recipes</a>
-  <a href="blog.html" data-page="blog.html">Blog</a>
-  <a href="contact.html" data-page="contact.html">Contact</a>
-  <a href="about_us.html" data-page="about_us.html">About us</a>
-</nav>
-        <div class="social-links">
-          <a href="facebook.com">
-            <img src="images/facebook.svg" alt="Facebook icon" />
-          </a>
-          <a href="x.com">
-            <img src="images/twitter.svg" alt="X icon" />
-          </a>
-          <a href="Instagram.com">
-            <img src="images/instagram.svg" alt="Instagram icon" />
-          </a>
-        </div>
+  <div class="container">
+    <div class="logo">
+      <span class="logo-text">Foodieland<span class="logo-accent">.</span></span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="recipe.html" data-page="recipe.html">Recipes</a>
+      <a href="blog.html" data-page="blog.html">Blog</a>
+      <a href="contact.html" data-page="contact.html">Contact</a>
+      <a href="about_us.html" data-page="about_us.html">About us</a>
+      <div class="mobile-social-links">
+        <a href="facebook.com">
+          <img src="images/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a href="x.com">
+          <img src="images/twitter.svg" alt="X icon" />
+        </a>
+        <a href="Instagram.com">
+          <img src="images/instagram.svg" alt="Instagram icon" />
+        </a>
       </div>
-    </header>
+    </nav>
+
+    <div class="social-links">
+      <a href="facebook.com">
+        <img src="images/facebook.svg" alt="Facebook icon" />
+      </a>
+      <a href="x.com">
+        <img src="images/twitter.svg" alt="X icon" />
+      </a>
+      <a href="Instagram.com">
+        <img src="images/instagram.svg" alt="Instagram icon" />
+      </a>
+    </div>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+  </div>
+</header>
 
     <main class="container">
       <section class="ticket">
@@ -268,49 +286,44 @@
     </main>
 
     <footer>
-      <div class="footer-row footer-top">
-        <div class="brand">
-          <div class="logo">
-            <span class="logo-text"
-              >Foodieland<span class="logo-accent">.</span></span
-            >
-          </div>
-
-          <p class="lorem">
-            Lorem ipsum dolor sit amet, consectetuipisicing elit,
-          </p>
+    <div class="footer-row footer-top">
+      <div class="brand">
+        <div class="logo">
+          <span class="logo-text">Foodieland<span class="logo-accent">.</span></span>
         </div>
-
-        <nav>
-  <a href="recipe.html" data-page="recipe.html">Recipes</a>
-  <a href="blog.html" data-page="blog.html">Blog</a>
-  <a href="contact.html" data-page="contact.html">Contact</a>
-  <a href="about_us.html" data-page="about_us.html">About us</a>
-</nav>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet, consectetuipisicing elit,
+        </p>
       </div>
 
-      <div class="footer-row footer-bottom">
-        <div class="copyright">
-          <span
-            >© 2020 Flowbase. Powered by
-            <span class="copyright-accent">Webflow</span></span
-          >
-        </div>
+      <nav>
+        <a href="recipe.html" data-page="recipe.html">Recipes</a>
+        <a href="blog.html" data-page="blog.html">Blog</a>
+        <a href="contact.html" data-page="contact.html">Contact</a>
+        <a href="about_us.html" data-page="about_us.html">About us</a>
+      </nav>
+    </div>
 
-        <div class="social-links">
-          <a href="facebook.com">
-            <img src="images/facebook.svg" alt="Facebook icon" />
-          </a>
-          <a href="x.com">
-            <img src="images/twitter.svg" alt="X icon" />
-          </a>
-          <a href="Instagram.com">
-            <img src="images/instagram.svg" alt="Instagram icon" />
-          </a>
-        </div>
+    <div class="footer-row footer-bottom">
+      <div class="copyright">
+        <span>© 2020 Flowbase. Powered by <span class="copyright-accent">Webflow</span></span>
       </div>
-    </footer>
+
+      <div class="social-links">
+        <a href="facebook.com">
+          <img src="images/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a href="x.com">
+          <img src="images/twitter.svg" alt="X icon" />
+        </a>
+        <a href="Instagram.com">
+          <img src="images/instagram.svg" alt="Instagram icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
     
     <script src="scripts/common.js"></script>
+    <script src="scripts/contact_script.js"></script>
   </body>
 </html>

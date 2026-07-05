@@ -33,7 +33,8 @@
 
 .ticket .user-info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* This stops the stretching and locks columns to the exact width of your inputs */
+    grid-template-columns: repeat(2, 400px); 
     column-gap: 40px;
     row-gap: 24px;
 }
@@ -121,4 +122,71 @@ main .daily .recipes-grid {
   font-size: 36px;
   letter-spacing: -1.44px;
   font-weight: 600;
+}
+
+/* phone styles */
+
+@media screen and (max-width: 768px) {
+  
+  .ticket {
+    margin-top: 25px;
+  }
+
+  .ticket > h1 {
+    font-size: 36px; 
+    margin-bottom: 32px;
+  }
+
+  .ticket > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ticket .banner {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .ticket .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ticket .user-info {
+    grid-template-columns: 1fr; 
+    width: 100%;
+  }
+
+  .ticket .user-info div:last-of-type {
+    grid-column: 1 / -1; 
+  }
+
+  .ticket .form-item input,
+  .ticket .form-item select,
+  .ticket .form-item textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+  background-color: white;
+  }
+
+  .ticket .user-info button {
+    width: 100%; 
+  }
+
+  main .daily .recipes-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .daily .description h4 {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .daily .recipes-grid article .visual img {
+    max-width: 100%;
+    height: auto;
+  }
 }

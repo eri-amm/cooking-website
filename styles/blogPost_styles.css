@@ -1,3 +1,4 @@
+
 /* heading styles */
 
 .post-heading {
@@ -192,4 +193,108 @@ main .daily .recipes-grid {
 .carousel-btn-right {
   font-size: large;
   right: 0;
+}
+
+/* phone styles */
+@media screen and (max-width: 768px) {
+
+  .post-heading {
+    margin-top: 25px;
+  }
+  
+  .post-heading > h1 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    width: 90%; 
+    margin: 0 auto;
+  }
+
+  .post-heading > p {
+    width: 95%; 
+    margin: 0 auto; 
+    padding: 0; 
+  }
+
+  .post-heading > img {
+    height: auto; 
+  }
+  
+  .post-heading .publish .author {
+    padding-right: 25px;
+  }
+
+  .content {
+    flex-direction: column; 
+    margin-top: 40px;
+  }
+  
+  .post-section > img {
+    width: 100%; 
+  }
+  
+  .post-content {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .post-content .post-section {
+    width: 95%; 
+    margin: 0 auto; 
+    padding: 0; 
+  }
+
+  .post-content .post-section > p {
+    width: 100%; 
+  }
+
+  .post-content div:nth-child(4) {
+    width: 100%;
+  }
+
+  .post-content .quote {
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 30px 5%; 
+    box-sizing: border-box;
+  }
+
+  .sidebar {
+    margin: 0;
+    text-align: center;
+  }
+
+  .sidebar .social-links {
+    flex-direction: row; 
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .recipes-grid {
+    overflow: hidden;
+  }
+
+  main .daily .recipes-grid {
+    display: flex;
+    gap: 0;
+  }
+
+  main .daily .recipes-grid > article {
+    flex: 0 0 100%;
+  }
+  .carousel-btn {
+    margin: -10px;
+    margin-top: 5px;
+  }
+  main .daily .recipes-grid article a {
+    width: 75%;
+    justify-self: center;
+  }
+  
+  .content {
+    gap: 50px;
+  }
 }

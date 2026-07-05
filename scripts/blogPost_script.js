@@ -1,4 +1,4 @@
-// carousel control logic
+// carousel control logics
 document.addEventListener("DOMContentLoaded", () => {
   const recipesGrid = document.querySelector(".recipes-grid");
   const prevButton = document.getElementById("daily-prev");

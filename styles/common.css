@@ -480,3 +480,247 @@ footer .social-links {
   gap: 40px;
   align-items: center;
 }
+
+/* new styles */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s ease;
+}
+header .mobile-social-links {
+  display: none;
+}
+
+/*loading spinner*/
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  display: none; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#form-status {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.error-msg { color: #e74c3c; }
+.success-msg { color: #2ecc71; }
+
+/* phone styles */
+
+@media screen and (max-width: 768px) {
+  footer, .container {
+    margin: 0px 20px;
+  }
+  
+  header .container {
+    margin: 20px 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .logo { margin-right: 0; }
+  header .social-links { display: none; }
+  
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  header nav.nav-menu {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px 0;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.05);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: 0.3s ease;
+    z-index: 99;
+  }
+  
+  header nav.nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  header .mobile-social-links {
+    display: flex;
+    flex-direction: row; 
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px; 
+  }
+  
+  footer {
+    margin-top: 80px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-top {
+    gap: 40px;
+  }
+
+  .footer-top nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    margin-left: 0;
+    min-width: auto;
+    font-size: 14px;
+  }
+
+  footer .social-links {
+    margin-left: 0;
+    justify-content: center;
+  }
+  
+  .newsletter {
+    margin-top: 80px;
+    aspect-ratio: auto; 
+    padding: 60px 20px; 
+    border-radius: 30px; 
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .newsletter .motto h6 {
+    font-size: 32px; 
+    letter-spacing: -1px;
+  }
+
+  .newsletter .motto p {
+    width: 100%; 
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 14px; 
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .newsletter form {
+    width: 100%; 
+    height: auto; 
+    flex-direction: column;
+    background-color: transparent; 
+    gap: 16px; 
+  }
+
+  .newsletter input {
+    width: 100%;
+    height: 60px;
+    margin-left: 0; 
+    padding: 0 20px;
+    border-radius: 16px; 
+    box-sizing: border-box;
+  }
+
+  .newsletter form button {
+    width: 100%; 
+    margin-right: 0; 
+  }
+  
+  .daily {
+    margin-top: 80px; 
+    gap: 40px; 
+  }
+
+  .daily .description {
+    flex-direction: column; 
+    gap: 20px; 
+    text-align: center; 
+  }
+
+  .daily .description h2 {
+    font-size: 32px; 
+    width: 100%; 
+  }
+
+  .daily .description p {
+    width: 100%; 
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .daily .recipes-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 32px;
+  }
+
+  .daily .recipes-grid article,
+  .daily .recipes-grid a,
+  .daily .recipes-grid .title {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .daily .recipes-grid .visual {
+    width: 100%; 
+    height: auto;
+    aspect-ratio: 29 / 20; 
+  }
+
+  .daily .recipes-grid .visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .loader {
+    width: 24px;
+    height: 24px;
+    border-width: 5px; 
+    margin-right: 8px;
+  }
+
+  #form-status {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+  }
+}

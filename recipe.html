@@ -10,63 +10,81 @@
 
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <span class="logo-text"
-            >Foodieland<span class="logo-accent">.</span></span
-          >
-        </div>
-        <nav>
-  <a href="index.html" data-page="index.html">Home</a>
-  <a href="recipe.html" data-page="recipe.html">Recipes</a>
-  <a href="blog.html" data-page="blog.html">Blog</a>
-  <a href="contact.html" data-page="contact.html">Contact</a>
-  <a href="about_us.html" data-page="about_us.html">About us</a>
-</nav>
-        <div class="social-links">
-          <a href="facebook.com">
-            <img src="images/facebook.svg" alt="Facebook icon" />
-          </a>
-          <a href="x.com">
-            <img src="images/twitter.svg" alt="X icon" />
-          </a>
-          <a href="Instagram.com">
-            <img src="images/instagram.svg" alt="Instagram icon" />
-          </a>
-        </div>
+  <div class="container">
+    <div class="logo">
+      <span class="logo-text">Foodieland<span class="logo-accent">.</span></span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="recipe.html" data-page="recipe.html">Recipes</a>
+      <a href="blog.html" data-page="blog.html">Blog</a>
+      <a href="contact.html" data-page="contact.html">Contact</a>
+      <a href="about_us.html" data-page="about_us.html">About us</a>
+      <div class="mobile-social-links">
+        <a href="facebook.com">
+          <img src="images/facebook.svg" alt="Facebook icon" />
+        </a>
+        <a href="x.com">
+          <img src="images/twitter.svg" alt="X icon" />
+        </a>
+        <a href="Instagram.com">
+          <img src="images/instagram.svg" alt="Instagram icon" />
+        </a>
       </div>
-    </header>
+    </nav>
+
+    <div class="social-links">
+      <a href="facebook.com">
+        <img src="images/facebook.svg" alt="Facebook icon" />
+      </a>
+      <a href="x.com">
+        <img src="images/twitter.svg" alt="X icon" />
+      </a>
+      <a href="Instagram.com">
+        <img src="images/instagram.svg" alt="Instagram icon" />
+      </a>
+    </div>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+  </div>
+</header>
 
     <main class="container">
-      <section class="recipe">
+      <section class="recipe" id="recipe-content">
         <div class="head">
           <div>
-            <h1>Health Japanese Fried Rice</h1>
+            <h1></h1>
             <div class="credit">
               <div class="profile">
                 <div class="avatar"></div>
                 <div class="publish">
-                  <p class="author">John Smith</p>
-                  <p class="date">15 March 2022</p>
+                  <p class="author"></p>
+                  <p class="date"></p>
                 </div>
               </div>
               <div class="prep">
                 <img src="images/timer.svg" />
                 <div>
                   <p>PREP TIME</p>
-                  <p class="duration">15 Minutes</p>
+                  <p class="duration"></p>
                 </div>
               </div>
               <div class="cook">
                 <img src="images/timer.svg" />
                 <div>
                   <p>COOK TIME</p>
-                  <p class="duration">15 Minutes</p>
+                  <p class="duration"></p>
                 </div>
               </div>
               <div class="type">
                 <img src="images/forkknife.svg" />
-                <p>Chicken</p>
+                <p></p>
               </div>
             </div>
           </div>
@@ -86,28 +104,28 @@
           </div>
         </div>
         <div class="mid">
-          <img src="images/thumbnail.png" alt="tutorial video thumbnail" />
+          <img src="" alt="tutorial video thumbnail" />
           <div class="nutrition">
             <h2>Nutrition Information</h2>
             <div>
               <p class="field">Calories</p>
-              <p class="value">219.9 kcal</p>
+              <p class="value"></p>
             </div>
             <div>
               <p class="field">Total Fat</p>
-              <p class="value">10.7 g</p>
+              <p class="value"></p>
             </div>
             <div>
               <p class="field">Protein</p>
-              <p class="value">7.9 g</p>
+              <p class="value"></p>
             </div>
             <div>
               <p class="field">Carbohydrate</p>
-              <p class="value">22.3 g</p>
+              <p class="value"></p>
             </div>
             <div>
               <p class="field">Cholesterol</p>
-              <p class="value">37.4 mg</p>
+              <p class="value"></p>
             </div>
             <p class="disclaimer">
               adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -512,5 +530,6 @@
     </footer>
     
     <script src="scripts/common.js"></script>
+    <script src="scripts/recipe_script.js"></script>
   </body>
 </html>
