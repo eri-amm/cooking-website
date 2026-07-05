@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.querySelector(".search-bar input");
   const articlesContainer = document.querySelector(".articles");
-  const pageButtons = document.querySelectorAll(".pagination button[data-page]");
+  const pageButtons = document.querySelectorAll(
+    ".pagination button[data-page]",
+  );
 
   const cards = [
     {
@@ -108,13 +110,15 @@ document.addEventListener("DOMContentLoaded", () => {
       </article>
     `;
   }
-// search functionality
+  // search functionality
   function applySearchFilter() {
     const articles = articlesContainer.querySelectorAll("article");
 
     articles.forEach((article) => {
       const titleElement = article.querySelector(".name");
-      const titleText = titleElement ? titleElement.textContent.toLowerCase() : "";
+      const titleText = titleElement
+        ? titleElement.textContent.toLowerCase()
+        : "";
 
       if (titleText.includes(currentSearchValue)) {
         article.classList.remove("hidden");
@@ -131,7 +135,10 @@ document.addEventListener("DOMContentLoaded", () => {
     articlesContainer.innerHTML = currentPageCards.map(createArticle).join("");
 
     pageButtons.forEach((button) => {
-      button.classList.toggle("active", button.dataset.page === String(pageNumber));
+      button.classList.toggle(
+        "active",
+        button.dataset.page === String(pageNumber),
+      );
     });
 
     applySearchFilter();

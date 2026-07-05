@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("active");
   });
 
-  document.querySelectorAll(".nav-menu a").forEach(link => {
+  document.querySelectorAll(".nav-menu a").forEach((link) => {
     link.addEventListener("click", () => {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
@@ -65,13 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
     submitBtn.innerHTML = `<span class="loader" style="display: inline-block; width: 14px; height: 14px; border-width: 3px;"></span> Please wait... (Up to 60s)`;
 
     try {
-      const response = await fetch("https://foodieland-oq9b.onrender.com/api/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
+      const response = await fetch(
+        "https://foodieland-oq9b.onrender.com/api/subscribe",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email: emailValue }),
         },
-        body: JSON.stringify({ email: emailValue })
-      });
+      );
 
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
@@ -81,12 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
       statusMsg.textContent = "You have successfully subscribed!";
       statusMsg.style.color = "#2ecc71";
       newsletterForm.reset();
-
     } catch (error) {
       console.error("Newsletter Subscription Error:", error);
       statusMsg.textContent = "Error: " + error.message;
-      statusMsg.style.color = "#e74c3c"; 
-      
+      statusMsg.style.color = "#e74c3c";
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = "Subscribe";

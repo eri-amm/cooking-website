@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // category GET
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   fetchCategories();
 });
 
 async function fetchCategories() {
-  const container = document.getElementById('category-list');
+  const container = document.getElementById("category-list");
 
   container.innerHTML = `
     <div style="text-align: center; width: 100%; padding: 40px 0;">
@@ -25,7 +25,9 @@ async function fetchCategories() {
   `;
 
   try {
-    const response = await fetch('https://foodieland-oq9b.onrender.com/api/categories');
+    const response = await fetch(
+      "https://foodieland-oq9b.onrender.com/api/categories",
+    );
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -33,19 +35,19 @@ async function fetchCategories() {
 
     const categories = await response.json();
 
-    container.innerHTML = '';
+    container.innerHTML = "";
 
-    categories.forEach(category => {
-      const linkItem = document.createElement('a');
+    categories.forEach((category) => {
+      const linkItem = document.createElement("a");
       linkItem.href = `${category.name.toLowerCase()}_menu.html`;
 
-      linkItem.classList.add('category-item');
+      linkItem.classList.add("category-item");
 
-      const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = category.image;
       img.alt = category.name;
 
-      const span = document.createElement('span');
+      const span = document.createElement("span");
       span.textContent = category.name;
 
       linkItem.appendChild(img);
@@ -53,9 +55,8 @@ async function fetchCategories() {
 
       container.appendChild(linkItem);
     });
-
   } catch (error) {
-    console.error('Failed to fetch categories:', error);
+    console.error("Failed to fetch categories:", error);
     container.innerHTML = `
       <p style="color: #e74c3c; text-align: center; width: 100%; font-weight: bold;">
         Failed to load categories. Please try refreshing the page.

@@ -82,23 +82,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderCards() {
-  const visibleCards = [
-    ...cards.slice(currentIndex),
-    ...cards.slice(0, currentIndex),
-  ];
+    const visibleCards = [
+      ...cards.slice(currentIndex),
+      ...cards.slice(0, currentIndex),
+    ];
 
-  recipesGrid.innerHTML = visibleCards.map(createCard).join("");
+    recipesGrid.innerHTML = visibleCards.map(createCard).join("");
 
-  const articleLinks = recipesGrid.querySelectorAll("article a");
+    const articleLinks = recipesGrid.querySelectorAll("article a");
 
-  articleLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
+    articleLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
 
-      window.location.href = "recipe.html";
+        window.location.href = "recipe.html";
+      });
     });
-  });
-}
+  }
 
   function showNext() {
     currentIndex = (currentIndex + 1) % cards.length;

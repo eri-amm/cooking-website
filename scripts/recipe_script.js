@@ -1,15 +1,14 @@
-
 //recipe details GET
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   fetchRecipeDetails();
 });
 
 async function fetchRecipeDetails() {
-  const BASE_URL = 'https://foodieland-oq9b.onrender.com';
-  const ENDPOINT = '/api/recipe-details/1'; 
-  
-  const recipeSection = document.getElementById('recipe-content');
+  const BASE_URL = "https://foodieland-oq9b.onrender.com";
+  const ENDPOINT = "/api/recipe-details/1";
+
+  const recipeSection = document.getElementById("recipe-content");
 
   const originalHTML = recipeSection.innerHTML;
 
@@ -24,7 +23,7 @@ async function fetchRecipeDetails() {
 
   try {
     const response = await fetch(`${BASE_URL}${ENDPOINT}`);
-    
+
     if (!response.ok) {
       throw new Error(`Server returned status: ${response.status}`);
     }
@@ -35,7 +34,6 @@ async function fetchRecipeDetails() {
     recipeSection.innerHTML = originalHTML;
 
     populateRecipeUI(recipeData);
-
   } catch (error) {
     console.error("Error fetching recipe:", error);
     recipeSection.innerHTML = `
@@ -48,36 +46,39 @@ async function fetchRecipeDetails() {
 }
 
 function populateRecipeUI(data) {
-  document.querySelector('.recipe h1').textContent = data.title;
-  const mainImageElement = document.querySelector('.mid img');
+  document.querySelector(".recipe h1").textContent = data.title;
+  const mainImageElement = document.querySelector(".mid img");
   if (mainImageElement) {
     mainImageElement.src = data.mainImage;
   }
-  
-  document.querySelector('.recipe .author').textContent = data.author.name;
-  document.querySelector('.recipe .date').textContent = data.author.date;
-  const avatarElement = document.querySelector('.credit .profile .avatar');
+
+  document.querySelector(".recipe .author").textContent = data.author.name;
+  document.querySelector(".recipe .date").textContent = data.author.date;
+  const avatarElement = document.querySelector(".credit .profile .avatar");
 
   if (avatarElement) {
     avatarElement.style.backgroundImage = `url('${data.author.image}')`;
   }
-  
-  document.querySelector('.recipe .prep .duration').textContent = data.prepTime;
-  document.querySelector('.recipe .cook .duration').textContent = data.cookTime;
 
-  document.querySelector('.recipe .head .type p').textContent = data.category;
+  document.querySelector(".recipe .prep .duration").textContent = data.prepTime;
+  document.querySelector(".recipe .cook .duration").textContent = data.cookTime;
 
-  const nutritionValues = document.querySelectorAll('.recipe .nutrition .value');
+  document.querySelector(".recipe .head .type p").textContent = data.category;
+
+  const nutritionValues = document.querySelectorAll(
+    ".recipe .nutrition .value",
+  );
   if (data.nutrition && nutritionValues.length >= 5) {
-      nutritionValues[0].textContent = data.nutrition.calories;
-      nutritionValues[1].textContent = data.nutrition.totalFat;
-      nutritionValues[2].textContent = data.nutrition.protein;
-      nutritionValues[3].textContent = data.nutrition.carbohydrate;
-      nutritionValues[4].textContent = data.nutrition.cholesterol;
+    nutritionValues[0].textContent = data.nutrition.calories;
+    nutritionValues[1].textContent = data.nutrition.totalFat;
+    nutritionValues[2].textContent = data.nutrition.protein;
+    nutritionValues[3].textContent = data.nutrition.carbohydrate;
+    nutritionValues[4].textContent = data.nutrition.cholesterol;
   }
-  
-  const descriptionElement = document.querySelector('.recipe .foot p');
+
+  const descriptionElement = document.querySelector(".recipe .foot p");
   if (descriptionElement) {
-      descriptionElement.textContent = data.description || 'Description not available.';
+    descriptionElement.textContent =
+      data.description || "Description not available.";
   }
 }
